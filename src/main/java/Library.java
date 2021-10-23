@@ -2,16 +2,10 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class Library {
-    //The class represents the library
-    //Contains the following variables:
-    //-list of the Reader objects - represents the clients of the library
-    //-list of the Book objects - represents books available in the library
-
 
     List<Reader> readers = new LinkedList<>();
     List<Book> books = new LinkedList<>();
 
-    //Constructor
     Library(List<Reader> readers, List<Book> books) {
         this.readers = readers;
         this.books = books;
@@ -20,7 +14,12 @@ public class Library {
     public Library() {
     }
 
-    //Add the reader to the library clients
+    //Check if the name and surname contain only letters.
+    //If they don't, print a message "Wrong name or surname".
+    //Check if the reader's number has exactly 9 digits.
+    //If it doesn't, print a message "Wrong phone number".
+    //If the data are correct, add the given reader to the library clients (the list readers)
+    //and print a message "You have added: <reader name> <reader surname>".
     public void createUser(Reader reader) {
         boolean flag = true;
         for (int i = 0; i <=reader.name.length()-1; i++) {
@@ -49,13 +48,6 @@ public class Library {
             System.out.println("You have added: " + reader.name + " " + reader.surname);
         }
     }
-
-        //Check if the name and surname contain only letters.
-        //If they don't, print a message "Wrong name or surname".
-        //Check if the reader's number has exactly 9 digits.
-        //If it doesn't, print a message "Wrong phone number".
-        //If the data are correct, add the given reader to the library clients (the list readers)
-        //and print a message "You have added: <reader name> <reader surname>".
 
     //Print on the screen all the books in the library
     public void readBooks(){
