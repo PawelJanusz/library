@@ -7,7 +7,7 @@ public class Reader {
     String surname;
     int age;
     int phoneNumber;
-    List<Book> books = new LinkedList<>();
+    List<Book> books;
 
     public Reader(String name, String surname, int age, int phoneNumber, List<Book> books) {
         this.name = name;

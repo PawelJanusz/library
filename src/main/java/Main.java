@@ -11,9 +11,6 @@ public class Main {
             new Book("clean code", "Robert Martin", 250),
             new Book("headway", "Liz Soars", 80));
 
-    static List<Reader> readerList = Collections.singletonList(new Reader("Adam", "Nowak", 23, 654789346, book1List));
-
-    static Book book = new Book("clean code", "Robert Martin", 250);
     static Library library = new Library();
     static Reader reader = new Reader("Adam", "Nowak", 23, 654789346, book1List);
 
